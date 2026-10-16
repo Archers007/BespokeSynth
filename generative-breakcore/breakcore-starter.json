@@ -1,0 +1,148 @@
+{
+   "modules": [
+      {
+         "name": "transport",
+         "position": [
+            14.0,
+            95.0
+         ],
+         "tempo": 174.0,
+         "type": "transport"
+      },
+      {
+         "name": "scale",
+         "position": [
+            158.0,
+            95.0
+         ],
+         "type": "scale"
+      },
+      {
+         "name": "breaks",
+         "position": [
+            14.0,
+            260.0
+         ],
+         "target": "kit",
+         "type": "euclideansequencer"
+      },
+      {
+         "name": "kit",
+         "position": [
+            420.0,
+            260.0
+         ],
+         "target": "drumbus",
+         "type": "drumplayer"
+      },
+      {
+         "name": "ghosts",
+         "pitch": 38,
+         "position": [
+            14.0,
+            560.0
+         ],
+         "probability": 0.5,
+         "target": "ghostchance",
+         "type": "randomnote",
+         "velocity": 0.6,
+         "interval": 7
+      },
+      {
+         "chance": 0.7,
+         "name": "ghostchance",
+         "position": [
+            230.0,
+            560.0
+         ],
+         "target": "kit",
+         "type": "notechance"
+      },
+      {
+         "name": "bassline",
+         "pitch": 26,
+         "position": [
+            14.0,
+            760.0
+         ],
+         "probability": 0.85,
+         "target": "reese",
+         "type": "randomnote",
+         "velocity": 0.9,
+         "interval": 5
+      },
+      {
+         "name": "reese",
+         "position": [
+            230.0,
+            760.0
+         ],
+         "target": "bassbus",
+         "type": "fmsynth"
+      },
+      {
+         "name": "drumbus",
+         "position": [
+            700.0,
+            260.0
+         ],
+         "target": "master",
+         "type": "gain"
+      },
+      {
+         "name": "bassbus",
+         "position": [
+            700.0,
+            760.0
+         ],
+         "target": "master",
+         "type": "gain"
+      },
+      {
+         "name": "master",
+         "position": [
+            950.0,
+            510.0
+         ],
+         "target": "splitter",
+         "type": "gain"
+      },
+      {
+         "name": "splitter",
+         "position": [
+            1150.0,
+            510.0
+         ],
+         "target": "output 1",
+         "target2": "output 2",
+         "type": "splitter"
+      },
+      {
+         "channels": 0,
+         "name": "output 1",
+         "position": [
+            1150.0,
+            660.0
+         ],
+         "type": "output"
+      },
+      {
+         "channels": 1,
+         "name": "output 2",
+         "position": [
+            1260.0,
+            660.0
+         ],
+         "type": "output"
+      },
+      {
+         "name": "chaos",
+         "position": [
+            14.0,
+            960.0
+         ],
+         "type": "lfo"
+      }
+   ],
+   "zoomlocations": []
+}
